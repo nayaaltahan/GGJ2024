@@ -36,6 +36,9 @@ namespace Feature.NPC.Scripts
             _states = new Dictionary<NpcState, NpcBaseState>();
             _states.Add(NpcState.Patrol, new PatrollingState());
             _navMeshAgent = GetComponent<NavMeshAgent>();
+            _animator = GetComponentInChildren<Animator>();
+            
+            SetState(NpcState.Patrol);
         }
 
         private void Update()
@@ -44,6 +47,13 @@ namespace Feature.NPC.Scripts
             NpcAnimator.SetFloat(Speed, NavMeshAgent.velocity.magnitude);
             
             _currentState.OnUpdate(this);
+        }
+        
+        public void SetState(NpcState state)
+        {
+            _currentState?.OnExitState(this);
+            _currentState = _states[state];
+            _currentState.OnEnterState(this);
         }
     }
 }
