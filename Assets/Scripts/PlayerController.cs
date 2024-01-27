@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     public PlayerModel playerSettings;
     private Rigidbody rigidbody;
+    private Camera _camera;
     private Animator _animator;
     private float _timeNotGrounded = 0f;
     private float _timeJumping = 0f;
@@ -23,11 +24,11 @@ public class PlayerController : MonoBehaviour
     private static readonly int TimeFalling = Animator.StringToHash("TimeFalling");
 
 
-    private
-        void Start()
+    private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         _animator = GetComponentInChildren<Animator>();
+        _camera = Camera.main;
     }
 
     private void Update()
@@ -39,10 +40,10 @@ public class PlayerController : MonoBehaviour
             _timeJumping = 0f;
             _jumped = true;
         }
-        
+
         _isSprinting = IsGrounded() && Input.GetKey(KeyCode.LeftShift);
 
-        
+
         // set animator running speed
         var direction = new Vector3(movement.x, 0, movement.z);
         var moveMagnitude = direction.magnitude;
@@ -55,6 +56,7 @@ public class PlayerController : MonoBehaviour
         {
             moveMagnitude = Mathf.Clamp(moveMagnitude, 0f, 1f);
         }
+
         _animator.SetFloat(MoveVelocity, moveMagnitude);
         _animator.SetFloat(TimeFalling, _timeNotGrounded);
 
@@ -71,7 +73,10 @@ public class PlayerController : MonoBehaviour
         moveDirection.x = Input.GetAxis("Horizontal");
         moveDirection.y = Input.GetAxis("Vertical");
 
-        movement = new Vector3(moveDirection.x, 0.0f, moveDirection.y) * playerSettings.speed;
+        movement = -new Vector3(moveDirection.x, 0.0f, moveDirection.y) * playerSettings.speed;
+        movement = -_camera.transform.TransformDirection(movement);
+        movement.y = 0;
+
 
         if (_isSprinting)
             movement *= 2;
