@@ -1,0 +1,459 @@
+fileFormatVersion: 2
+guid: 3123a217b6472704cbf2df02a7febb3a
+timeCreated: 1496761320
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Base_manki
+    100002: Base_mankiEarD
+    100004: Base_mankiEarL
+    100006: Base_mankiEybD
+    100008: Base_mankiEybL
+    100010: Base_mankiHead
+    100012: Base_mankiLCollarbone
+    100014: Base_mankiLDigit11
+    100016: Base_mankiLDigit12
+    100018: Base_mankiLDigit13
+    100020: Base_mankiLDigit21
+    100022: Base_mankiLDigit22
+    100024: Base_mankiLDigit23
+    100026: Base_mankiLDigit31
+    100028: Base_mankiLDigit32
+    100030: Base_mankiLDigit33
+    100032: Base_mankiLDigit41
+    100034: Base_mankiLDigit42
+    100036: Base_mankiLDigit43
+    100038: Base_mankiLForearm
+    100040: Base_mankiLIKTarget
+    100042: Base_mankiLLeg1
+    100044: Base_mankiLLeg2
+    100046: Base_mankiLLegAnkle
+    100048: Base_mankiLLegDigit11
+    100050: Base_mankiLLegDigit12
+    100052: Base_mankiLLegPlatform
+    100054: Base_mankiLLegUpVectorNode
+    100056: Base_mankiLObject
+    100058: Base_mankiLPalm
+    100060: Base_mankiLUpperarm
+    100062: Base_mankiLUpVectorNode
+    100064: Base_mankiMouth_do
+    100066: Base_mankiMouth_up
+    100068: Base_mankiNeck1
+    100070: Base_mankiNeck2
+    100072: Base_mankiPelvis
+    100074: Base_mankiRArmCollarbone
+    100076: Base_mankiRArmDigit11
+    100078: Base_mankiRArmDigit12
+    100080: Base_mankiRArmDigit13
+    100082: Base_mankiRArmDigit21
+    100084: Base_mankiRArmDigit22
+    100086: Base_mankiRArmDigit23
+    100088: Base_mankiRArmDigit31
+    100090: Base_mankiRArmDigit32
+    100092: Base_mankiRArmDigit33
+    100094: Base_mankiRArmDigit41
+    100096: Base_mankiRArmDigit42
+    100098: Base_mankiRArmDigit43
+    100100: Base_mankiRArmForearm
+    100102: Base_mankiRArmIKTarget
+    100104: Base_mankiRArmPalm
+    100106: Base_mankiRArmUpperarm
+    100108: Base_mankiRArmUpVectorNode
+    100110: Base_mankiRibcage
+    100112: Base_mankiRLeg1
+    100114: Base_mankiRLeg2
+    100116: Base_mankiRLegAnkle
+    100118: Base_mankiRLegDigit11
+    100120: Base_mankiRLegDigit12
+    100122: Base_mankiRLegPlatform
+    100124: Base_mankiRLegUpVectorNode
+    100126: Base_mankiSpine1
+    100128: Base_mankiSpine2
+    100130: Base_mankiSpine3
+    100132: Base_mankiSpine4
+    100134: Base_mankRObject
+    100136: Box004
+    100138: Dummy001
+    100140: Dummy002
+    100142: Dummy003
+    100144: Dummy004
+    100146: Eyelid_down_der
+    100148: Eyelid_down_left
+    100150: Eyelid_up_der
+    100152: Eyelid_up_left
+    100154: Mahgnkey
+    100156: Monkey_eyes
+    100158: //RootNode
+    100160: Object001
+    100162: Object003
+    100164: Sausage_hat
+    400000: Base_manki
+    400002: Base_mankiEarD
+    400004: Base_mankiEarL
+    400006: Base_mankiEybD
+    400008: Base_mankiEybL
+    400010: Base_mankiHead
+    400012: Base_mankiLCollarbone
+    400014: Base_mankiLDigit11
+    400016: Base_mankiLDigit12
+    400018: Base_mankiLDigit13
+    400020: Base_mankiLDigit21
+    400022: Base_mankiLDigit22
+    400024: Base_mankiLDigit23
+    400026: Base_mankiLDigit31
+    400028: Base_mankiLDigit32
+    400030: Base_mankiLDigit33
+    400032: Base_mankiLDigit41
+    400034: Base_mankiLDigit42
+    400036: Base_mankiLDigit43
+    400038: Base_mankiLForearm
+    400040: Base_mankiLIKTarget
+    400042: Base_mankiLLeg1
+    400044: Base_mankiLLeg2
+    400046: Base_mankiLLegAnkle
+    400048: Base_mankiLLegDigit11
+    400050: Base_mankiLLegDigit12
+    400052: Base_mankiLLegPlatform
+    400054: Base_mankiLLegUpVectorNode
+    400056: Base_mankiLObject
+    400058: Base_mankiLPalm
+    400060: Base_mankiLUpperarm
+    400062: Base_mankiLUpVectorNode
+    400064: Base_mankiMouth_do
+    400066: Base_mankiMouth_up
+    400068: Base_mankiNeck1
+    400070: Base_mankiNeck2
+    400072: Base_mankiPelvis
+    400074: Base_mankiRArmCollarbone
+    400076: Base_mankiRArmDigit11
+    400078: Base_mankiRArmDigit12
+    400080: Base_mankiRArmDigit13
+    400082: Base_mankiRArmDigit21
+    400084: Base_mankiRArmDigit22
+    400086: Base_mankiRArmDigit23
+    400088: Base_mankiRArmDigit31
+    400090: Base_mankiRArmDigit32
+    400092: Base_mankiRArmDigit33
+    400094: Base_mankiRArmDigit41
+    400096: Base_mankiRArmDigit42
+    400098: Base_mankiRArmDigit43
+    400100: Base_mankiRArmForearm
+    400102: Base_mankiRArmIKTarget
+    400104: Base_mankiRArmPalm
+    400106: Base_mankiRArmUpperarm
+    400108: Base_mankiRArmUpVectorNode
+    400110: Base_mankiRibcage
+    400112: Base_mankiRLeg1
+    400114: Base_mankiRLeg2
+    400116: Base_mankiRLegAnkle
+    400118: Base_mankiRLegDigit11
+    400120: Base_mankiRLegDigit12
+    400122: Base_mankiRLegPlatform
+    400124: Base_mankiRLegUpVectorNode
+    400126: Base_mankiSpine1
+    400128: Base_mankiSpine2
+    400130: Base_mankiSpine3
+    400132: Base_mankiSpine4
+    400134: Base_mankRObject
+    400136: Box004
+    400138: Dummy001
+    400140: Dummy002
+    400142: Dummy003
+    400144: Dummy004
+    400146: Eyelid_down_der
+    400148: Eyelid_down_left
+    400150: Eyelid_up_der
+    400152: Eyelid_up_left
+    400154: Mahgnkey
+    400156: Monkey_eyes
+    400158: //RootNode
+    400160: Object001
+    400162: Object003
+    400164: Sausage_hat
+    2300000: Monkey_eyes
+    2300002: Object001
+    3300000: Monkey_eyes
+    3300002: Object001
+    4300000: Mahgnkey
+    4300002: Object001
+    4300004: Monkey_eyes
+    4300006: Eyelid_down_der
+    4300008: Eyelid_up_der
+    4300010: Eyelid_up_left
+    4300012: Eyelid_down_left
+    4300014: Box004
+    4300016: Object003
+    4300018: Sausage_hat
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Box004
+    13700002: Eyelid_down_der
+    13700004: Eyelid_down_left
+    13700006: Eyelid_up_der
+    13700008: Eyelid_up_left
+    13700010: Mahgnkey
+    13700012: Object003
+    13700014: Sausage_hat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Base_manki
+        weight: 1
+      - path: Base_mankiLIKTarget
+        weight: 1
+      - path: Base_mankiLLegPlatform
+        weight: 1
+      - path: Base_mankiPelvis
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiLLeg1
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiLLeg1/Base_mankiLLeg2
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiLLeg1/Base_mankiLLeg2/Base_mankiLLegAnkle
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiLLeg1/Base_mankiLLeg2/Base_mankiLLegAnkle/Base_mankiLLegDigit11
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiLLeg1/Base_mankiLLeg2/Base_mankiLLegAnkle/Base_mankiLLegDigit11/Base_mankiLLegDigit12
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiLLegUpVectorNode
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiRLeg1
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiRLeg1/Base_mankiRLeg2
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiRLeg1/Base_mankiRLeg2/Base_mankiRLegAnkle
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiRLeg1/Base_mankiRLeg2/Base_mankiRLegAnkle/Base_mankiRLegDigit11
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiRLeg1/Base_mankiRLeg2/Base_mankiRLegAnkle/Base_mankiRLegDigit11/Base_mankiRLegDigit12
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiRLegUpVectorNode
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit11
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit11/Base_mankiLDigit12
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit11/Base_mankiLDigit12/Base_mankiLDigit13
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit21
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit21/Base_mankiLDigit22
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit21/Base_mankiLDigit22/Base_mankiLDigit23
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit31
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit31/Base_mankiLDigit32
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit31/Base_mankiLDigit32/Base_mankiLDigit33
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit41
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit41/Base_mankiLDigit42
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLDigit41/Base_mankiLDigit42/Base_mankiLDigit43
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLCollarbone/Base_mankiLUpperarm/Base_mankiLForearm/Base_mankiLPalm/Base_mankiLObject
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiLUpVectorNode
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Base_mankiEarD
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Base_mankiEarL
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Base_mankiEybD
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Base_mankiEybL
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Base_mankiMouth_do
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Base_mankiMouth_up
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Dummy001
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Dummy001/Object001
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Dummy002
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Dummy002/Monkey_eyes
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Eyelid_down_der
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Eyelid_down_left
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Eyelid_up_der
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiNeck1/Base_mankiNeck2/Base_mankiHead/Eyelid_up_left
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit11
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit11/Base_mankiRArmDigit12
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit11/Base_mankiRArmDigit12/Base_mankiRArmDigit13
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit21
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit21/Base_mankiRArmDigit22
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit21/Base_mankiRArmDigit22/Base_mankiRArmDigit23
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit31
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit31/Base_mankiRArmDigit32
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit31/Base_mankiRArmDigit32/Base_mankiRArmDigit33
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit41
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit41/Base_mankiRArmDigit42
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankiRArmDigit41/Base_mankiRArmDigit42/Base_mankiRArmDigit43
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmCollarbone/Base_mankiRArmUpperarm/Base_mankiRArmForearm/Base_mankiRArmPalm/Base_mankRObject
+        weight: 1
+      - path: Base_mankiPelvis/Base_mankiSpine1/Base_mankiSpine2/Base_mankiSpine3/Base_mankiSpine4/Base_mankiRibcage/Base_mankiRArmUpVectorNode
+        weight: 1
+      - path: Base_mankiRArmIKTarget
+        weight: 1
+      - path: Base_mankiRLegPlatform
+        weight: 1
+      - path: Box004
+        weight: 1
+      - path: Dummy003
+        weight: 1
+      - path: Dummy004
+        weight: 1
+      - path: Mahgnkey
+        weight: 1
+      - path: Object003
+        weight: 1
+      - path: Sausage_hat
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
