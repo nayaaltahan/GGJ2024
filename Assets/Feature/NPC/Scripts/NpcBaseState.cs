@@ -1,5 +1,8 @@
-﻿namespace Feature.NPC.Scripts
+﻿using System;
+
+namespace Feature.NPC.Scripts
 {
+    [Serializable]
     public class NpcBaseState
     {
         public NpcState Type;

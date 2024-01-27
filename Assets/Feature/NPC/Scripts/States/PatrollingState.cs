@@ -20,6 +20,7 @@ namespace Feature.NPC.Scripts.States
             _currentNode = FindClosestNode(stateController);
 
             _agent.SetDestination(stateController.PatrolNodeController.PatrolNodes[_currentNode].position);
+            stateController.EnableNavMeshAgent();
         }
 
         public override void OnUpdate(NpcStateController stateController)
