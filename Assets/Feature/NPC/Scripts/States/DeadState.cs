@@ -1,3 +1,6 @@
+using Cysharp.Threading.Tasks;
+using UnityEngine;
+
 namespace Feature.NPC.Scripts.States
 {
     public class DeadState : NpcBaseState
@@ -11,13 +14,12 @@ namespace Feature.NPC.Scripts.States
             base.OnEnterState(stateController);
             stateController.NpcAnimator.enabled = false;
             stateController.DisableNavMeshAgent();
-            stateController.Setup.ActivateRagdoll();
+            stateController.RagdollController.ActivateRagdoll();
         }
 
         public override void OnExitState(NpcStateController stateController)
         {
             base.OnExitState(stateController);
-            stateController.Setup.DeactivateRagdoll();
             stateController.NpcAnimator.enabled = true;
         }
     }

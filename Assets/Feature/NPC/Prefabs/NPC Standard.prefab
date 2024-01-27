@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 3321700966059510080}
   - component: {fileID: 2676399685152315850}
   - component: {fileID: 9047610429943333639}
+  - component: {fileID: 4182938688364917944}
   - component: {fileID: 5263037745546568691}
   m_Layer: 0
   m_Name: NPC Standard
@@ -83,6 +84,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _modelList: {fileID: 11400000, guid: d517e4e4f8842684f891556135db8829, type: 2}
   _renderer: {fileID: 6121920575290999274}
+--- !u!114 &9047610429943333639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747745996374290224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1878be9b2a546e4a2a82b534cd6b123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _patrolNodeController: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 4c53e29f2a5c3ce499fd7680ad04cf9f, type: 2}
+  _defaultState: 1
+--- !u!114 &4182938688364917944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747745996374290224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 809e2f30423347e78a79eed78407aa87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _environmentColliderParent: {fileID: 1188745931788749457}
+  _startActive: 0
   _ragdollColliders:
   - {fileID: 9034566009614562976}
   - {fileID: 3582922606747691073}
@@ -111,22 +141,6 @@ MonoBehaviour:
   - {fileID: 4628331309171578627}
   - {fileID: 6090053134550031870}
   - {fileID: 8957992512306748759}
-  _environmentColliderParent: {fileID: 1188745931788749457}
---- !u!114 &9047610429943333639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2747745996374290224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1878be9b2a546e4a2a82b534cd6b123, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _patrolNodeController: {fileID: 0}
-  _settings: {fileID: 11400000, guid: 4c53e29f2a5c3ce499fd7680ad04cf9f, type: 2}
-  _defaultState: 1
 --- !u!195 &5263037745546568691
 NavMeshAgent:
   m_ObjectHideFlags: 0

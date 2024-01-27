@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Feature.NPC.Scripts.PatrolNodes;
 using Feature.NPC.Scripts.Scriptable_Objects;
 using Feature.NPC.Scripts.States;
+using Feature.Ragdoll;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.AI;
@@ -28,16 +29,21 @@ namespace Feature.NPC.Scripts
 
         private NavMeshAgent _navMeshAgent;
         private Animator _animator;
-        private NpcSetup _setup;
+        private RagdollController _ragdollController;
 
         public PatrolNodeController PatrolNodeController => _patrolNodeController;
         public NavMeshAgent NavMeshAgent => _navMeshAgent;
         public Animator NpcAnimator => _animator;
         public NpcSettings Settings => _settings;
-        public NpcSetup Setup => _setup;
+        public RagdollController RagdollController => _ragdollController;
+        public NpcBaseState PreviousState => _previousState;
 
+        [ShowInInspector, ReadOnly]
+        private NpcBaseState _currentState;
+        [ShowInInspector, ReadOnly]
+        private NpcBaseState _previousState;
+        
         private Dictionary<NpcState, NpcBaseState> _states;
-        [ReadOnly] private NpcBaseState _currentState;
         private static readonly int Speed = Animator.StringToHash("Speed");
 
         private void Awake()
@@ -53,7 +59,7 @@ namespace Feature.NPC.Scripts
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _animator = GetComponentInChildren<Animator>();
-            _setup = GetComponent<NpcSetup>();
+            _ragdollController = GetComponent<RagdollController>();
         }
 
         private void InitializeStates()
@@ -73,9 +79,12 @@ namespace Feature.NPC.Scripts
             _currentState.OnUpdate(this);
         }
 
-        [Button]
+        [Button(ButtonSizes.Medium, ButtonStyle.Box, Expanded = true)]
         public void SetState(NpcState state)
         {
+            if (_currentState != null)
+                _previousState = _currentState;
+            
             _currentState?.OnExitState(this);
             _currentState = _states[state];
             _currentState.OnEnterState(this);
