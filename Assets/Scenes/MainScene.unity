@@ -357,7 +357,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1016489803}
   - component: {fileID: 1016489802}
-  - component: {fileID: 1016489804}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -412,29 +411,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016489801}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.047455233, y: -0.9507465, z: 0.18454123, w: 0.2444868}
-  m_LocalPosition: {x: 0.5, y: 0.47, z: -3.5900002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.267, y: 2.941, z: -4.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2120044139}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1016489804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016489801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44d70cc20219cd84593f67d248eafe36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Offset: {x: 0, y: 2.21, z: 0}
-  m_ApplyAfter: 1
-  m_PreserveComposition: 0
 --- !u!1 &1184514786
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,18 +585,12 @@ Transform:
   m_GameObject: {fileID: 1184514786}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 2.68, z: -3.5900002}
+  m_LocalPosition: {x: 1.267, y: 2.941, z: -4.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1814205924 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 54335935183624394, guid: df024dc3d38764956b60160c88a520fa,
-    type: 3}
-  m_PrefabInstance: {fileID: 8804475545017944197}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2120044138
 GameObject:
   m_ObjectHideFlags: 3
@@ -673,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damping: {x: 0.1, y: 0.5, z: 0.3}
-  ShoulderOffset: {x: 0.5, y: 0.07, z: -1.59}
+  ShoulderOffset: {x: 0.5, y: 0, z: -2.99}
   VerticalArmLength: 0.4
   CameraSide: 1
   CameraDistance: 2
@@ -704,21 +682,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 109281689062939120, guid: df024dc3d38764956b60160c88a520fa,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3832120565391169031, guid: df024dc3d38764956b60160c88a520fa,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5143062222318054123, guid: df024dc3d38764956b60160c88a520fa,
-        type: 3}
-      propertyPath: _modelTransform
-      value: 
-      objectReference: {fileID: 1814205924}
     - target: {fileID: 5226771994175843419, guid: df024dc3d38764956b60160c88a520fa,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -776,7 +744,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: df024dc3d38764956b60160c88a520fa, type: 3}
 --- !u!4 &8804475545017944198 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5226771994175843419, guid: df024dc3d38764956b60160c88a520fa,
+  m_CorrespondingSourceObject: {fileID: 5026386016748866904, guid: df024dc3d38764956b60160c88a520fa,
     type: 3}
   m_PrefabInstance: {fileID: 8804475545017944197}
   m_PrefabAsset: {fileID: 0}

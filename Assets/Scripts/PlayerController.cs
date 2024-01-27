@@ -20,7 +20,8 @@ public class PlayerController : MonoBehaviour
     private bool _isSprinting = false;
     private static readonly int TriggerJumping = Animator.StringToHash("Trigger_Jump");
     private static readonly int ExitJump = Animator.StringToHash("Trigger_ExitJump");
-    
+    private static readonly int TimeFalling = Animator.StringToHash("TimeFalling");
+
 
     private
         void Start()
@@ -55,6 +56,7 @@ public class PlayerController : MonoBehaviour
             moveMagnitude = Mathf.Clamp(moveMagnitude, 0f, 1f);
         }
         _animator.SetFloat(MoveVelocity, moveMagnitude);
+        _animator.SetFloat(TimeFalling, _timeNotGrounded);
 
         // Rotate the model to the direction of movement
         if (moveMagnitude > 0.1f)
@@ -69,7 +71,7 @@ public class PlayerController : MonoBehaviour
         moveDirection.x = Input.GetAxis("Horizontal");
         moveDirection.y = Input.GetAxis("Vertical");
 
-        movement = new Vector3(moveDirection.x, 0.0f, moveDirection.y);
+        movement = new Vector3(moveDirection.x, 0.0f, moveDirection.y) * playerSettings.speed;
 
         if (_isSprinting)
             movement *= 2;

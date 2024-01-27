@@ -2148,7 +2148,7 @@ ModelImporter:
       name: HumanoidMidAir
       takeName: _207_Idle_JumpUpMedium_NoHands1Step_Idle
       internalID: 0
-      firstFrame: 131
+      firstFrame: 132
       lastFrame: 133
       wrapMode: 0
       orientationOffsetY: 0
@@ -2468,7 +2468,7 @@ ModelImporter:
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 56
     isReadable: 1
   meshes:
     lODScreenPercentages: []
