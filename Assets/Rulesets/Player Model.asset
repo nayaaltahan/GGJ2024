@@ -12,10 +12,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c906de9f8e0940c2a8afc06d3e858e8a, type: 3}
   m_Name: Player Model
   m_EditorClassIdentifier: 
-  speed: 388.5
-  jumpForce: 21.3
+  speed: 5
+  jumpForce: 400
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   groundCheckDistance: 1
   gravity: -4.83
+  GravityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.3651543
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 50
+      inSlope: 125.00001
+      outSlope: 125.00001
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  TimeToFullGravity: 2
+  JumpCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 1.0000267
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0032959
+      value: -2
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.21535276
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  AirTime: 1
