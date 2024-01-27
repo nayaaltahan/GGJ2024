@@ -16,3 +16,5 @@ MonoBehaviour:
   _alertSpeed: 5
   _calmRotationSpeed: 120
   _alertRotationSpeed: 170
+  _calmStoppingDistance: 1
+  _alertStoppingDistance: 2
