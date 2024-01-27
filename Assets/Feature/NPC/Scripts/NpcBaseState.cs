@@ -2,6 +2,13 @@
 {
     public class NpcBaseState
     {
+        public NpcState Type;
+
+        public NpcBaseState(NpcState type)
+        {
+            Type = type;
+        }
+
         public virtual void OnEnterState(NpcStateController stateController)
         {
             

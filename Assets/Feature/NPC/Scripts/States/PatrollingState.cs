@@ -14,11 +14,11 @@ namespace Feature.NPC.Scripts.States
         public override void OnEnterState(NpcStateController stateController)
         {
             base.OnEnterState(stateController);
+            stateController.SetAgentCalmSettings();
+            
             _agent = stateController.NavMeshAgent;
-            _agent.isStopped = false;
-
-
             _currentNode = FindClosestNode(stateController);
+
             _agent.SetDestination(stateController.PatrolNodeController.PatrolNodes[_currentNode].position);
         }
 
@@ -60,6 +60,11 @@ namespace Feature.NPC.Scripts.States
             }
 
             return closestNode;
+        }
+
+        public PatrollingState(NpcState type) : base(type)
+        {
+            
         }
     }
 }

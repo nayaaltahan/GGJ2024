@@ -62,6 +62,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _patrolNodeController: {fileID: 0}
+  _settings: {fileID: 11400000, guid: 4c53e29f2a5c3ce499fd7680ad04cf9f, type: 2}
+  _startIdle: 0
 --- !u!195 &5263037745546568691
 NavMeshAgent:
   m_ObjectHideFlags: 0
