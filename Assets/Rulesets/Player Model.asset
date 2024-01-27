@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c906de9f8e0940c2a8afc06d3e858e8a, type: 3}
   m_Name: Player Model
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 388.5
+  jumpForce: 21.3
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckDistance: 1
+  gravity: -4.83
