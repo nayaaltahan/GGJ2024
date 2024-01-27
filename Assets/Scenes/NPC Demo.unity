@@ -1461,6 +1461,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9047610429943333639, guid: 736a808aec79c2b4da959d4a4c8a0674,
         type: 3}
+      propertyPath: _defaultState
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047610429943333639, guid: 736a808aec79c2b4da959d4a4c8a0674,
+        type: 3}
       propertyPath: _patrolNodeController
       value: 
       objectReference: {fileID: 1539855019}

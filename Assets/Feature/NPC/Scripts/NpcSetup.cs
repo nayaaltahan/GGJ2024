@@ -19,6 +19,8 @@ namespace Feature.NPC.Scripts
         
         [SerializeField]
         private List<Rigidbody> _ragdollRigidBodies;
+
+        [SerializeField] private GameObject _environmentColliderParent;
         
         
         private void Awake()
@@ -30,6 +32,7 @@ namespace Feature.NPC.Scripts
 
         public void ActivateRagdoll()
         {
+            _environmentColliderParent.SetActive(false);
             for (var i = 0; i < _ragdollColliders.Count; i++)
             {
                 _ragdollColliders[i].enabled = true;
@@ -39,6 +42,7 @@ namespace Feature.NPC.Scripts
 
         public void DeactivateRagdoll()
         {
+            _environmentColliderParent.SetActive(true);
             for (var i = 0; i < _ragdollColliders.Count; i++)
             {
                 _ragdollColliders[i].enabled = false;
