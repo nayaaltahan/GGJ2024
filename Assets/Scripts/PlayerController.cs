@@ -29,6 +29,11 @@ public class PlayerController : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         _animator = GetComponentInChildren<Animator>();
         _camera = Camera.main;
+        
+        // TODO: Delete
+        Cursor.lockState = CursorLockMode.Locked;
+        // hide cursor
+        Cursor.visible = false;
     }
 
     private void Update()
