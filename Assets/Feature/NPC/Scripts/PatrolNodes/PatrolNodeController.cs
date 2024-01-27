@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Feature.NPC.Scripts.PatrolNodes
@@ -7,8 +8,16 @@ namespace Feature.NPC.Scripts.PatrolNodes
     public class PatrolNodeController : MonoBehaviour
     {
         public List<Transform> PatrolNodes;
+        public GameObject PatrolNode;
 
 
+        [Button("Add patrol node")]
+        private void AddPatrolNode()
+        {
+            var newPatrolNode = Instantiate(PatrolNode, transform.position, Quaternion.identity, transform);
+            PatrolNodes.Add(newPatrolNode.transform);
+        }
+        
         private void OnDrawGizmosSelected()
         {
             // Draw lines between the patrol nodes
