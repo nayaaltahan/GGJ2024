@@ -1807,6 +1807,10 @@ PrefabInstance:
       value: fence_long_mesh (4)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.5
       objectReference: {fileID: 0}
@@ -2217,6 +2221,10 @@ PrefabInstance:
       value: fence_long_mesh (5)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.5
       objectReference: {fileID: 0}
@@ -2309,6 +2317,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2566,6 +2578,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2826,6 +2842,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3290,6 +3310,10 @@ PrefabInstance:
       value: fence_long_mesh (1)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.5
       objectReference: {fileID: 0}
@@ -3465,6 +3489,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4017,6 +4045,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5560,6 +5592,10 @@ PrefabInstance:
       value: fence_long_mesh (28)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.5
       objectReference: {fileID: 0}
@@ -5821,6 +5857,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9715,6 +9755,10 @@ PrefabInstance:
       value: fence_long_mesh (22)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -9834,6 +9878,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10177,6 +10225,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11092,6 +11144,10 @@ PrefabInstance:
       value: fence_long_mesh (29)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.5
       objectReference: {fileID: 0}
@@ -11459,6 +11515,10 @@ PrefabInstance:
       value: fence_long_mesh (3)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
       objectReference: {fileID: 0}
@@ -11716,6 +11776,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13514,6 +13578,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15640,6 +15708,10 @@ PrefabInstance:
       value: fence_long_mesh (31)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15
       objectReference: {fileID: 0}
@@ -15972,6 +16044,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16778,6 +16854,10 @@ PrefabInstance:
       value: fence_long_mesh (14)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -17121,6 +17201,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20556,6 +20640,10 @@ PrefabInstance:
       value: fence_long_mesh (23)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -22974,6 +23062,10 @@ PrefabInstance:
       value: fence_long_mesh (36)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15
       objectReference: {fileID: 0}
@@ -23149,6 +23241,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24069,6 +24165,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26307,6 +26407,10 @@ PrefabInstance:
       value: fence_long_mesh (2)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
       objectReference: {fileID: 0}
@@ -27896,6 +28000,10 @@ PrefabInstance:
       value: fence_long_mesh (7)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -28470,6 +28578,10 @@ PrefabInstance:
       value: fence_long_mesh (11)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -28771,6 +28883,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29144,6 +29260,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29818,6 +29938,10 @@ PrefabInstance:
       value: fence_long_mesh (10)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -29910,6 +30034,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32395,6 +32523,10 @@ PrefabInstance:
       value: fence_long_mesh (12)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -33060,6 +33192,10 @@ PrefabInstance:
       value: fence_long_mesh (13)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -33229,6 +33365,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33545,6 +33685,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33981,6 +34125,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36842,6 +36990,10 @@ PrefabInstance:
       value: fence_long_mesh (17)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
       objectReference: {fileID: 0}
@@ -37820,6 +37972,10 @@ PrefabInstance:
       value: fence_long_mesh (32)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15
       objectReference: {fileID: 0}
@@ -38409,6 +38565,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39067,6 +39227,10 @@ PrefabInstance:
       value: fence_long_mesh (27)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
       objectReference: {fileID: 0}
@@ -39322,6 +39486,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_Name
       value: fence_long_mesh (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b714036eb8031b744b2c8a63b8608450, type: 3}
       propertyPath: m_LocalPosition.x
