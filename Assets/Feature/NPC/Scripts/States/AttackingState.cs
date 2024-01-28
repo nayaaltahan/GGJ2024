@@ -48,7 +48,8 @@ namespace Feature.NPC.Scripts.States
             var hit = Physics.OverlapSphereNonAlloc(stateController.AttackFromTransform.position, 1f, _hitColliders, stateController.Settings.AttackLayer);
             if (hit > 0)
             {
-                // stateController.PlayerTransform.GetComponent<PlayerHealth>().TakeDamage(stateController.Settings.AttackDamage);
+                var force = stateController.transform.forward * 10;
+                stateController.PlayerHealth.TakeDamage(stateController.Settings.AttackDamage, force);
             }
             // Debug draw the spherecast
             

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using Feature.Ragdoll;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -19,6 +20,7 @@ namespace DefaultNamespace
 
         private Animator _animator;
 
+        private RagdollController _ragdollController;
         private Transform _camTransform;
         private int _ammo = 0;
         private static readonly int TriggerShoot = Animator.StringToHash("Trigger_Shoot");
@@ -27,10 +29,14 @@ namespace DefaultNamespace
         {
             _camTransform = Camera.main.transform;
             _animator = GetComponentInChildren<Animator>();
+            _ragdollController = GetComponent<RagdollController>();
         }
 
         private void Update()
         {
+            if (_ragdollController.IsRagdoolActive)
+                return;
+            
             if (Input.GetButtonDown("Fire1"))
             {
                 Shoot();

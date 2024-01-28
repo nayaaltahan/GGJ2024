@@ -18,10 +18,11 @@ MonoBehaviour:
   _alertRotationSpeed: 170
   _calmStoppingDistance: 1
   _alertStoppingDistance: 2
-  _startAttackRange: 4
+  _startAttackRange: 6
   _attackCooldown: 1.5
   _attackProjectileDelay: 500
   _attackLayer:
     serializedVersion: 2
     m_Bits: 128
-  _attackRange: 3
+  _attackRange: 4
+  _exitAttackStateRange: 1

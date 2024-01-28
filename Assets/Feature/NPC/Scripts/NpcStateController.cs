@@ -33,6 +33,7 @@ namespace Feature.NPC.Scripts
         private Animator _animator;
         private RagdollController _ragdollController;
         private Transform _playerTransform;
+        private PlayerHealth _playerHealth;
         public Vector3 TargetPosition;
         public Vector3 RandomPoint;
 
@@ -44,6 +45,7 @@ namespace Feature.NPC.Scripts
         public NpcBaseState PreviousState => _previousState;
         public Transform PlayerTransform => _playerTransform;
         public Transform AttackFromTransform => _attackFromTransform;
+        public PlayerHealth PlayerHealth => _playerHealth;
         
 
         [ShowInInspector, ReadOnly]
@@ -66,6 +68,7 @@ namespace Feature.NPC.Scripts
         private void Start()
         {
             _playerTransform = PlayerManager.Instance.PlayerTransform;
+            _playerHealth = PlayerManager.Instance.PlayerTransform.GetComponent<PlayerHealth>();
         }
 
         private void GetComponents()

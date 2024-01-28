@@ -36,6 +36,8 @@ namespace Feature.NPC.Scripts.Scriptable_Objects
         [SerializeField] private LayerMask _attackLayer;
         [SerializeField] private float _attackRange = 1f;
         [SerializeField] private float _exitAttackStateRange = 3.5f;
+        [SerializeField] private float _attackDamage = 100f;
+        
         
         public float CalmSpeed => _calmSpeed;
         public float AlertSpeed => _alertSpeed;
@@ -50,5 +52,6 @@ namespace Feature.NPC.Scripts.Scriptable_Objects
         public int AttackProjectileDelay => _attackProjectileDelay;
         public float PatrolToAttackDistance => _attackRange - 0.2f;
         public float ExitAttackStateRange => _exitAttackStateRange;
+        public float AttackDamage => _attackDamage;
     }
 }

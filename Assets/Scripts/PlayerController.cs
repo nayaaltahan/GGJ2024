@@ -1,4 +1,5 @@
 using System;
+using Feature.Ragdoll;
 using ScriptableObjects;
 using UnityEditor;
 using UnityEngine;
@@ -22,7 +23,13 @@ public class PlayerController : MonoBehaviour
     private static readonly int TriggerJumping = Animator.StringToHash("Trigger_Jump");
     private static readonly int ExitJump = Animator.StringToHash("Trigger_ExitJump");
     private static readonly int TimeFalling = Animator.StringToHash("TimeFalling");
+    private RagdollController _ragdollController;
 
+
+    private void Awake()
+    {
+        _ragdollController = GetComponent<RagdollController>();
+    }
 
     private void Start()
     {
@@ -30,14 +37,45 @@ public class PlayerController : MonoBehaviour
         _animator = GetComponentInChildren<Animator>();
         _camera = Camera.main;
         
+        
         // TODO: Delete
         Cursor.lockState = CursorLockMode.Locked;
         // hide cursor
         Cursor.visible = false;
     }
 
+    private void OnEnable()
+    {
+        _ragdollController.OnRagdollActivated += OnRagdollActivated;
+        _ragdollController.OnRagdollDeactivated += OnRagdollDeactivated;
+        Debug.Log("Player enabled");
+    }
+
+    private void OnDisable()
+    {
+        _ragdollController.OnRagdollActivated -= OnRagdollActivated;
+        _ragdollController.OnRagdollDeactivated -= OnRagdollDeactivated;
+        Debug.Log("Player disabled");
+    }
+
+
+    private void OnRagdollActivated()
+    {
+        rigidbody.isKinematic = true;
+        _animator.enabled = false;
+    }
+    private void OnRagdollDeactivated()
+    {
+        rigidbody.isKinematic = false;
+        rigidbody.velocity = Vector3.zero;
+        _animator.enabled = true;
+    }
+
     private void Update()
     {
+        if (_ragdollController.IsRagdoolActive)
+            return;
+        
         if (Input.GetKeyDown(KeyCode.Space) & IsGrounded())
         {
             rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0f, rigidbody.velocity.z);
@@ -46,7 +84,7 @@ public class PlayerController : MonoBehaviour
             _jumped = true;
         }
 
-        _isSprinting = IsGrounded() && Input.GetKey(KeyCode.LeftShift);
+        _isSprinting = Input.GetKey(KeyCode.LeftShift);
 
 
         // set animator running speed
@@ -75,6 +113,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (_ragdollController.IsRagdoolActive)
+            return;
+        
         moveDirection.x = Input.GetAxis("Horizontal");
         moveDirection.y = Input.GetAxis("Vertical");
 
