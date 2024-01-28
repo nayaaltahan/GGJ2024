@@ -57,7 +57,7 @@ namespace Feature.Ragdoll
         }
 #endif
 
-        private void Awake()
+        private void Start()
         {
             if(_startActive)
                 ActivateRagdoll();

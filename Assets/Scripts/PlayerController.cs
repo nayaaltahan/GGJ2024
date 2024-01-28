@@ -29,12 +29,12 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         _ragdollController = GetComponent<RagdollController>();
+        rigidbody = GetComponent<Rigidbody>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     private void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
-        _animator = GetComponentInChildren<Animator>();
         _camera = Camera.main;
 
 
@@ -74,6 +74,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // show cursor
+            Cursor.visible = !Cursor.visible;
+            // unlock cursor
+            Cursor.lockState = Cursor.visible ? CursorLockMode.None : CursorLockMode.Locked;
+        }
+        
         if (_ragdollController.IsRagdoolActive)
             return;
 
