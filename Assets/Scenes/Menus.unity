@@ -675,6 +675,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1574681977}
     m_Modifications:
+    - target: {fileID: 359329952943722419, guid: d957d57f81da4bc4b96828353e7e4e0b,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.6117647
+      objectReference: {fileID: 0}
     - target: {fileID: 2598849982822416550, guid: d957d57f81da4bc4b96828353e7e4e0b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

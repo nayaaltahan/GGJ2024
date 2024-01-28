@@ -46,7 +46,7 @@ namespace Feature.NPC.Scripts.States
 
             await UniTask.Delay(stateController.Settings.AttackProjectileDelay);
             AudioManager.instance.Play3DOneShot("event:/SFX/Attacks/impact_hit", stateController.transform.position);
-            var hit = Physics.OverlapSphereNonAlloc(stateController.AttackFromTransform.position, 1f, _hitColliders, stateController.Settings.AttackLayer);
+            var hit = Physics.OverlapSphereNonAlloc(stateController.AttackFromTransform.position, 3f, _hitColliders, stateController.Settings.AttackLayer);
             if (hit > 0)
             {
                 AudioManager.instance.Play3DOneShot("event:/SFX/monkey_cry", stateController.transform.position);
