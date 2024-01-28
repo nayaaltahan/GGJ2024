@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c906de9f8e0940c2a8afc06d3e858e8a, type: 3}
   m_Name: Player Model
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 400
+  speed: 6
+  jumpForce: 600
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  groundCheckDistance: 1
+  groundCheckDistance: 0.1
   gravity: -4.83
   GravityCurve:
     serializedVersion: 2
@@ -27,24 +27,24 @@ MonoBehaviour:
       value: 0
       inSlope: 0
       outSlope: 0
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.6
-      value: 0
-      inSlope: 0
-      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.3651543
       outWeight: 0.33333334
     - serializedVersion: 3
+      time: 0.20758691
+      value: 35.033596
+      inSlope: 58.730583
+      outSlope: 58.730583
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
       time: 1
       value: 50
-      inSlope: 125.00001
-      outSlope: 125.00001
+      inSlope: 18.887123
+      outSlope: 18.887123
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -66,8 +66,17 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.5
-      value: 1.0000267
+      time: 0.085783996
+      value: 0.7
+      inSlope: 2.509704
+      outSlope: 2.509704
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4604534
+      value: 0.99983644
       inSlope: 0
       outSlope: 0
       tangentMode: 136

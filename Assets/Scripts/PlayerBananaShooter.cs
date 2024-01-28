@@ -52,7 +52,7 @@ namespace DefaultNamespace
             if (_isOnCooldown)
                 return;
             
-            var projectile = Instantiate(_bananaPrefab, _shootFrom.position, Quaternion.identity, _shootFrom);
+            var projectile = Instantiate(_bananaPrefab, _shootFrom.position, _shootFrom.rotation, _shootFrom);
             _animator.SetTrigger(TriggerShoot);
             await UniTask.Delay(_delayBeforeShoot);
             projectile.GetComponent<BananaProjectile>().Shoot(_camTransform.forward);
