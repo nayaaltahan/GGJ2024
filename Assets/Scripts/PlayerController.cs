@@ -36,8 +36,8 @@ public class PlayerController : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         _animator = GetComponentInChildren<Animator>();
         _camera = Camera.main;
-        
-        
+
+
         // TODO: Delete
         Cursor.lockState = CursorLockMode.Locked;
         // hide cursor
@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
         rigidbody.isKinematic = true;
         _animator.enabled = false;
     }
+
     private void OnRagdollDeactivated()
     {
         rigidbody.isKinematic = false;
@@ -75,7 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         if (_ragdollController.IsRagdoolActive)
             return;
-        
+
         if (Input.GetKeyDown(KeyCode.Space) & IsGrounded())
         {
             rigidbody.velocity = new Vector3(rigidbody.velocity.x, 0f, rigidbody.velocity.z);
@@ -115,7 +116,7 @@ public class PlayerController : MonoBehaviour
     {
         if (_ragdollController.IsRagdoolActive)
             return;
-        
+
         moveDirection.x = Input.GetAxis("Horizontal");
         moveDirection.y = Input.GetAxis("Vertical");
 
@@ -160,10 +161,12 @@ public class PlayerController : MonoBehaviour
         return Physics.CheckSphere(transform.position, playerSettings.groundCheckDistance, playerSettings.groundLayer);
     }
 
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         // Draw a sphere to show the ground check distance
         Handles.color = Color.red;
         Handles.DrawWireDisc(transform.position, Vector3.forward, playerSettings.groundCheckDistance);
     }
+#endif
 }
