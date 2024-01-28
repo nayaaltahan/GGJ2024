@@ -36,5 +36,10 @@ namespace Feature.NPC.Scripts
         {
             OnExitState(stateController);   
         }
+
+        public virtual void OnDrawGizmosSelected(NpcStateController stateController)
+        {
+            
+        }
     }
 }

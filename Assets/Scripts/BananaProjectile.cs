@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using Feature.NPC.Scripts;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -12,6 +14,8 @@ namespace DefaultNamespace
         
         private float _timeAlive = 0f;
         private Rigidbody _rb;
+        
+        List<Transform> _objectsHit = new List<Transform>(); 
 
         private void Awake()
         {
@@ -32,6 +36,15 @@ namespace DefaultNamespace
             if (_timeAlive > _timeToDespawsn)
             {
                 Destroy(gameObject);
+            }
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            if (other.gameObject.CompareTag("NPCHitCollider") && _objectsHit.Contains(other.transform.transform) == false)
+            {
+                _objectsHit.Add(other.transform.parent);
+                other.gameObject.GetComponentInParent<NpcStateController>()?.SetState(NpcState.Chase);
             }
         }
     }
