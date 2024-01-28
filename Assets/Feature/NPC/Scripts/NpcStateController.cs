@@ -67,15 +67,13 @@ namespace Feature.NPC.Scripts
         {
             InitializeStates();
             GetComponents();
-
-
-            SetState(_defaultState);
         }
 
         private void Start()
         {
             _playerTransform = PlayerManager.Instance.PlayerTransform;
             _playerHealth = PlayerManager.Instance.PlayerTransform.GetComponent<PlayerHealth>();
+            SetState(_defaultState);
         }
 
         private void GetComponents()

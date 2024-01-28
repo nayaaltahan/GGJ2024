@@ -16,7 +16,7 @@ public class NPCSpawner : MonoBehaviour
 
     private void Awake()
     {
-        if (PatrolNodeController != null)
+        if (PatrolNodeController == null)
         {
             var node = FindClosestPatrolNode();
             PatrolNodeController = node.GetComponentInParent<PatrolNodeController>();
@@ -62,5 +62,12 @@ public class NPCSpawner : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(ruleset.spawningInterval - 5f, ruleset.spawningInterval + 5f));
             SpawnNPC();
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(transform.position, 1);
     }
 }
