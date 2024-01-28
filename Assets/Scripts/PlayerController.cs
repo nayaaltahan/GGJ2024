@@ -74,13 +74,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            // show cursor
-            Cursor.visible = !Cursor.visible;
-            // unlock cursor
-            Cursor.lockState = Cursor.visible ? CursorLockMode.None : CursorLockMode.Locked;
-        }
+        if (transform.position.y < -5f)
+            transform.position = new Vector3(0, 2, 0);
+
         
         if (_ragdollController.IsRagdoolActive)
             return;

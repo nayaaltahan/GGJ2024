@@ -13,13 +13,19 @@ namespace DefaultNamespace
         public CanvasGroup GameOverMenu;
         public TMP_Text GameOverText;
         public Camera MainMenuCamera;
-        
+
         private void Awake()
         {
             GameOverMenu.gameObject.SetActive(false);
             MainMenu.gameObject.SetActive(true);
         }
-        
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Delete))
+                OnGameOver();
+        }
+
         public async void OnPlay()
         {
             MainMenuCamera.gameObject.SetActive(false);
@@ -39,7 +45,7 @@ namespace DefaultNamespace
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0;
         }
-        
+
         public void OnRestart()
         {
             SceneManager.LoadScene(0);

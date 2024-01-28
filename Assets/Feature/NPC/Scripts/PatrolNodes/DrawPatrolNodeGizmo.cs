@@ -1,5 +1,4 @@
-﻿#if UNITY_EDITOR
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,6 +9,7 @@ namespace Feature.NPC.Scripts.PatrolNodes
     {
         PatrolNodeController _patrolNodeController;
 
+#if UNITY_EDITOR
         private void OnDrawGizmosSelected()
         {
             if (_patrolNodeController == null)
@@ -29,6 +29,6 @@ namespace Feature.NPC.Scripts.PatrolNodes
                 }
             }
         }
+#endif
     }
 }
-#endif
