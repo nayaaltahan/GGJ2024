@@ -22,7 +22,7 @@ namespace DefaultNamespace
             _ragdollController = GetComponent<RagdollController>();
         }
 
-        public async void TakeDamage(float damage, Vector3 force = default)
+        public void TakeDamage(float damage, Vector3 force = default)
         {
             if (_isKnockedOut)
                 return;
@@ -33,13 +33,13 @@ namespace DefaultNamespace
             {
                 _isKnockedOut = true;
                 _ragdollController.ActivateRagdoll();
-                await UniTask.DelayFrame(1);
-                // _ragdollController.AddForceToHead(force);
-                await UniTask.Delay(_timeToStandUp);
-                transform.position = _graphics.transform.position;
-                transform.position = Vector3.up * 0.5f;
-                _ragdollController.DeactivateRagdoll();
-                _isKnockedOut = false;
+                // await UniTask.DelayFrame(1);
+                _ragdollController.AddForceToHead(force);
+                // await UniTask.Delay(_timeToStandUp);
+                // transform.position = _graphics.transform.position;
+                // transform.position = Vector3.up * 0.5f;
+                // _ragdollController.DeactivateRagdoll();
+                // _isKnockedOut = false;
             }
         }
 
