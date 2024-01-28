@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using Feature.Ragdoll;
+using RengeGames.HealthBars;
 using UnityEngine;
 using UnityEngine.Pool;
 
@@ -16,6 +17,7 @@ namespace DefaultNamespace
         [SerializeField] private int _delayBeforeShoot = 500;
         [SerializeField] private int _coolDown = 1000;
         [SerializeField] private float _maxHoldTime = .5f;
+        [SerializeField] private RadialSegmentedHealthBar _healthBar;
 
 
         private float _holdTime;
@@ -34,6 +36,8 @@ namespace DefaultNamespace
             _camTransform = Camera.main.transform;
             _animator = GetComponentInChildren<Animator>();
             _ragdollController = GetComponent<RagdollController>();
+            _healthBar.GetComponent<CanvasGroup>().alpha = 0;
+            _healthBar.SetPercent(0);
         }
 
         private void Update()
@@ -45,16 +49,19 @@ namespace DefaultNamespace
             {
                 _isHoldingDown = true;
                 _holdTime = 0;
+                _healthBar.GetComponent<CanvasGroup>().alpha = 1;
             }
             
             _holdTime += Time.deltaTime;
             var currentValue = Mathf.Clamp(_holdTime / _maxHoldTime, 0, 1);
-            
+            _healthBar.SetPercent(currentValue);
             
             if (Input.GetButtonUp("Fire1"))
             {
                 Shoot(currentValue);
                 StartCooldown();
+                _healthBar.GetComponent<CanvasGroup>().alpha = 0;
+                _healthBar.SetPercent(0);
             }
         }
 
