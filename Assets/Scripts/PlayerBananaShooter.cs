@@ -19,6 +19,9 @@ namespace DefaultNamespace
         [SerializeField] private float _maxHoldTime = .5f;
         [SerializeField] private RadialSegmentedHealthBar _healthBar;
 
+        private int _currentAmmo;
+        private int _maxAmmo;
+
 
         private float _holdTime;
         private bool _isHoldingDown = false;
@@ -38,6 +41,12 @@ namespace DefaultNamespace
             _ragdollController = GetComponent<RagdollController>();
             _healthBar.GetComponent<CanvasGroup>().alpha = 0;
             _healthBar.SetPercent(0);
+            _maxAmmo = _bananaAmmoBelt.Count;
+            
+            for (var i = _currentAmmo; i < _maxAmmo; i++)
+            {
+                _bananaAmmoBelt[i].SetActive(false);
+            }
         }
 
         private void Update()
@@ -47,6 +56,9 @@ namespace DefaultNamespace
             
             if (Input.GetButtonDown("Fire1"))
             {
+                if (_currentAmmo <= 0)
+                    return;
+                
                 _isHoldingDown = true;
                 _holdTime = 0;
                 _healthBar.GetComponent<CanvasGroup>().alpha = 1;
@@ -58,6 +70,9 @@ namespace DefaultNamespace
             
             if (Input.GetButtonUp("Fire1"))
             {
+                if (_currentAmmo <= 0)
+                    return;
+                
                 Shoot(currentValue);
                 StartCooldown();
                 _healthBar.GetComponent<CanvasGroup>().alpha = 0;
@@ -65,9 +80,18 @@ namespace DefaultNamespace
             }
         }
 
+        public bool PickupAmmo()
+        {
+            if (_currentAmmo >= _maxAmmo)
+                return false;
+            _bananaAmmoBelt[_currentAmmo].SetActive(true);
+            _currentAmmo++;
+            return true;
+        }
+
         private async void StartCooldown()
         {
-            if (_isOnCooldown)
+            if (_isOnCooldown || _currentAmmo <= 0)
                 return;
             _isOnCooldown = true;
             await UniTask.Delay(_coolDown);
@@ -76,8 +100,12 @@ namespace DefaultNamespace
 
         private async void Shoot(float holdTime)
         {
-            if (_isOnCooldown)
+            if (_isOnCooldown || _currentAmmo <= 0)
                 return;
+            
+            _currentAmmo--;
+            _bananaAmmoBelt[_currentAmmo].SetActive(false);
+            
             AudioManager.instance.Play3DOneShot("event:/SFX/Attacks/Banana_Throw", transform.position);
             var projectile = Instantiate(_bananaPrefab, _shootFrom.position, _shootFrom.rotation, _shootFrom);
             _animator.SetTrigger(TriggerShoot);

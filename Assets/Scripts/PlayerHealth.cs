@@ -15,11 +15,12 @@ namespace DefaultNamespace
         private bool _isKnockedOut = false;
         
         private RagdollController _ragdollController;
-        
+        private SceneLoader _sceneLoader;
         
         private void Awake()
         {
             _ragdollController = GetComponent<RagdollController>();
+            _sceneLoader = FindObjectOfType<SceneLoader>();
         }
 
         public void TakeDamage(float damage, Vector3 force = default)
@@ -35,6 +36,9 @@ namespace DefaultNamespace
                 _ragdollController.ActivateRagdoll();
                 // await UniTask.DelayFrame(1);
                 _ragdollController.AddForceToHead(force);
+                
+                // _sceneLoader.OnGameOver();
+                
                 // await UniTask.Delay(_timeToStandUp);
                 // transform.position = _graphics.transform.position;
                 // transform.position = Vector3.up * 0.5f;
