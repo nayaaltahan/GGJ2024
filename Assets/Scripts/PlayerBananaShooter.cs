@@ -15,7 +15,11 @@ namespace DefaultNamespace
         [SerializeField] private List<GameObject> _bananaAmmoBelt;
         [SerializeField] private int _delayBeforeShoot = 500;
         [SerializeField] private int _coolDown = 1000;
+        [SerializeField] private float _maxHoldTime = .5f;
 
+
+        private float _holdTime;
+        private bool _isHoldingDown = false;
         private bool _isOnCooldown;
 
         private Animator _animator;
@@ -39,7 +43,17 @@ namespace DefaultNamespace
             
             if (Input.GetButtonDown("Fire1"))
             {
-                Shoot();
+                _isHoldingDown = true;
+                _holdTime = 0;
+            }
+            
+            _holdTime += Time.deltaTime;
+            var currentValue = Mathf.Clamp(_holdTime / _maxHoldTime, 0, 1);
+            
+            
+            if (Input.GetButtonUp("Fire1"))
+            {
+                Shoot(currentValue);
                 StartCooldown();
             }
         }
@@ -53,7 +67,7 @@ namespace DefaultNamespace
             _isOnCooldown = false;
         }
 
-        private async void Shoot()
+        private async void Shoot(float holdTime)
         {
             if (_isOnCooldown)
                 return;
@@ -61,7 +75,7 @@ namespace DefaultNamespace
             var projectile = Instantiate(_bananaPrefab, _shootFrom.position, _shootFrom.rotation, _shootFrom);
             _animator.SetTrigger(TriggerShoot);
             await UniTask.Delay(_delayBeforeShoot);
-            projectile.GetComponent<BananaProjectile>().Shoot(_camTransform.forward);
+            projectile.GetComponent<BananaProjectile>().Shoot(_camTransform.forward, holdTime);
             
         }
     }

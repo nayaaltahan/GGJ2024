@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38e17adaa074eb1a070d20fea6da2a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 40
+  _speed: 60
   _timeToDespawsn: 20
   _bananaPeelPrefab: {fileID: 7775066790028720947, guid: 4c3844d1adfe5354fab84c47ad11041b,
     type: 3}

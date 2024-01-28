@@ -25,11 +25,12 @@ namespace DefaultNamespace
             _rb.isKinematic = true;
         }
 
-        public void Shoot(Vector3 direction)
+        public void Shoot(Vector3 direction, float intensity)
         {
             transform.SetParent(null);
             _rb.isKinematic = false;
-            _rb.AddForce(direction * _speed, ForceMode.Impulse);
+            Debug.Log("Direction is: " + direction + " and intensity is: " + intensity);
+            _rb.AddForce(direction * _speed * intensity, ForceMode.Impulse);
         }
 
         private void Update()
