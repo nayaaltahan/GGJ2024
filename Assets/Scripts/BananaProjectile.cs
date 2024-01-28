@@ -12,6 +12,8 @@ namespace DefaultNamespace
 
         [SerializeField] private float _timeToDespawsn = 20f;
         
+        [SerializeField] private GameObject _bananaPeelPrefab;
+        
         private float _timeAlive = 0f;
         private Rigidbody _rb;
         
@@ -45,6 +47,12 @@ namespace DefaultNamespace
             {
                 _objectsHit.Add(other.transform.parent);
                 other.gameObject.GetComponentInParent<NpcStateController>()?.SetState(NpcState.Chase);
+            }
+            else if (other.gameObject.CompareTag("Ground"))
+            {
+                var peel = Instantiate(_bananaPeelPrefab, transform.position + Vector3.up * 0.5f, Quaternion.identity);
+                // Peel VFX as well and sound
+                Destroy(gameObject);                
             }
         }
     }

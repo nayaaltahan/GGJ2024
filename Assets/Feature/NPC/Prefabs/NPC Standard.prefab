@@ -100,6 +100,8 @@ MonoBehaviour:
   _settings: {fileID: 11400000, guid: 4c53e29f2a5c3ce499fd7680ad04cf9f, type: 2}
   _attackFromTransform: {fileID: 8495671981744219352}
   _defaultState: 1
+  TargetPosition: {x: 0, y: 0, z: 0}
+  RandomPoint: {x: 0, y: 0, z: 0}
 --- !u!114 &4182938688364917944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +144,8 @@ MonoBehaviour:
   - {fileID: 4628331309171578627}
   - {fileID: 6090053134550031870}
   - {fileID: 8957992512306748759}
+  _footRigidBody: {fileID: 9001383512689292292}
+  _headRigidBody: {fileID: 4628331309171578627}
 --- !u!195 &5263037745546568691
 NavMeshAgent:
   m_ObjectHideFlags: 0

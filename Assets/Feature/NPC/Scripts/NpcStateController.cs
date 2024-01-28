@@ -108,6 +108,11 @@ namespace Feature.NPC.Scripts
             _currentState.OnEnterState(this);
         }
 
+        public void SetDeadState()
+        {
+            SetState(NpcState.Dead);
+        }
+
         public void SetAgentCalmSettings()
         {
             _navMeshAgent.isStopped = false;

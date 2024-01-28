@@ -97,7 +97,7 @@ namespace Feature.Ragdoll
         
         public void AddForceToFoot(Vector3 force)
         {
-            _footRigidBody.AddForce(force);
+            _footRigidBody.AddForce(force, ForceMode.Impulse);
         }
         
         public void AddForceToHead(Vector3 force)
