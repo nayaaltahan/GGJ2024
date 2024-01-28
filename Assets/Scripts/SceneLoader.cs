@@ -1,5 +1,6 @@
 ﻿using System;
 using Cysharp.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,7 @@ namespace DefaultNamespace
     {
         public CanvasGroup MainMenu;
         public CanvasGroup GameOverMenu;
+        public TMP_Text GameOverText;
         public Camera MainMenuCamera;
         
         private void Awake()
@@ -29,6 +31,7 @@ namespace DefaultNamespace
         public void OnGameOver()
         {
             GameOverMenu.gameObject.SetActive(true);
+            GameOverText.text = $"You Pulled {NPCDeathCounterUI.NPCDeathCounter} Pranks!";
             Time.timeScale = 0;
         }
         
