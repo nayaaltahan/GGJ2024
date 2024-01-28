@@ -1,5 +1,6 @@
 using System.Linq;
 using Cysharp.Threading.Tasks;
+using DefaultNamespace;
 using UnityEngine;
 
 namespace Feature.NPC.Scripts.States
@@ -44,10 +45,11 @@ namespace Feature.NPC.Scripts.States
             stateController.NpcAnimator.SetTrigger(Attack);
 
             await UniTask.Delay(stateController.Settings.AttackProjectileDelay);
-
+            AudioManager.instance.Play3DOneShot("event:/SFX/Attacks/impact_hit", stateController.transform.position);
             var hit = Physics.OverlapSphereNonAlloc(stateController.AttackFromTransform.position, 1f, _hitColliders, stateController.Settings.AttackLayer);
             if (hit > 0)
             {
+                AudioManager.instance.Play3DOneShot("event:/SFX/monkey_cry", stateController.transform.position);
                 var force = stateController.transform.forward * 10;
                 stateController.PlayerHealth.TakeDamage(stateController.Settings.AttackDamage, force);
             }

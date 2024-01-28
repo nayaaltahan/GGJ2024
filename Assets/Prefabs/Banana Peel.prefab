@@ -133,6 +133,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0309b3125a994853844db4fa1ccb99f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _forceToApply: 100
+  _slatSound:
+    Guid:
+      Data1: 652420627
+      Data2: 1216339173
+      Data3: -1033760079
+      Data4: 1686820026
+    Path: event:/Splat
 --- !u!54 &25758987075544348
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -78,7 +78,7 @@ namespace DefaultNamespace
         {
             if (_isOnCooldown)
                 return;
-            
+            AudioManager.instance.Play3DOneShot("event:/SFX/Attacks/Banana_Throw", transform.position);
             var projectile = Instantiate(_bananaPrefab, _shootFrom.position, _shootFrom.rotation, _shootFrom);
             _animator.SetTrigger(TriggerShoot);
             await UniTask.Delay(_delayBeforeShoot);
