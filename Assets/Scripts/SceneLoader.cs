@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,11 +18,13 @@ namespace DefaultNamespace
             MainMenu.gameObject.SetActive(true);
         }
         
-        public void OnPlay()
+        public async void OnPlay()
         {
             MainMenuCamera.gameObject.SetActive(false);
             SceneManager.LoadScene("Level", LoadSceneMode.Additive);
             SceneManager.LoadScene("MainScene", LoadSceneMode.Additive);
+            await UniTask.DelayFrame(1);
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Level"));
             Time.timeScale = 1;
             MainMenu.gameObject.SetActive(false);
         }
@@ -29,17 +32,29 @@ namespace DefaultNamespace
         public void OnGameOver()
         {
             GameOverMenu.gameObject.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0;
         }
         
-        public async void OnRestart()
+        public void OnRestart()
+        {
+            SceneManager.LoadScene(0);
+            // StartCoroutine(RestartGameCoroutine());
+        }
+
+        private IEnumerator RestartGameCoroutine()
         {
             GameOverMenu.gameObject.SetActive(false);
             MainMenu.gameObject.SetActive(true);
-            await SceneManager.UnloadSceneAsync("Level");
-            await SceneManager.UnloadSceneAsync("MainScene");
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Menus"));
+            yield return new WaitForEndOfFrame();
+            var mainScene = SceneManager.UnloadSceneAsync(1);
+            var unloadLevel = SceneManager.UnloadSceneAsync(2);
+            yield return unloadLevel;
+            yield return mainScene;
+            yield return new WaitForEndOfFrame();
             MainMenuCamera.gameObject.SetActive(true);
         }
-
     }
 }

@@ -37,7 +37,7 @@ namespace DefaultNamespace
                 // await UniTask.DelayFrame(1);
                 _ragdollController.AddForceToHead(force);
                 
-                // _sceneLoader.OnGameOver();
+                _sceneLoader.OnGameOver();
                 
                 // await UniTask.Delay(_timeToStandUp);
                 // transform.position = _graphics.transform.position;

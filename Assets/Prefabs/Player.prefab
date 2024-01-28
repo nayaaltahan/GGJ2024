@@ -189,8 +189,6 @@ MonoBehaviour:
     type: 3}
   _bananaAmmoBelt:
   - {fileID: 3550473433015889918}
-  - {fileID: 8335069190207441921}
-  - {fileID: 1184035139130460634}
   - {fileID: 2622081081282731617}
   - {fileID: 1500960451052964152}
   - {fileID: 1523042022367555778}
@@ -198,6 +196,8 @@ MonoBehaviour:
   - {fileID: 2039667222710180989}
   - {fileID: 6119411504980703884}
   - {fileID: 3123282516624612202}
+  - {fileID: 8335069190207441921}
+  - {fileID: 1184035139130460634}
   _delayBeforeShoot: 500
   _coolDown: 1200
   _maxHoldTime: 0.5
