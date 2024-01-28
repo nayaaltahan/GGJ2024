@@ -14,7 +14,7 @@ namespace Feature.NPC.Scripts.PatrolNodes
         {
             if (_patrolNodeController == null)
                 _patrolNodeController = GetComponentInParent<PatrolNodeController>();
-            
+            Gizmos.color = Color.red;
             for (int i = 0; i < _patrolNodeController.PatrolNodes.Count; i++)
             {
                 if (i == _patrolNodeController.PatrolNodes.Count - 1)

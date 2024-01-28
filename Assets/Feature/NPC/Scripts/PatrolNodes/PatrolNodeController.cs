@@ -21,7 +21,7 @@ namespace Feature.NPC.Scripts.PatrolNodes
         private void OnDrawGizmosSelected()
         {
             // Draw lines between the patrol nodes
-
+            Gizmos.color = Color.red;
             for (int i = 0; i < PatrolNodes.Count; i++)
             {
                 if (i == PatrolNodes.Count - 1)
