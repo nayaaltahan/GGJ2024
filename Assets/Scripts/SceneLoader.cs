@@ -34,7 +34,7 @@ namespace DefaultNamespace
         public void OnGameOver()
         {
             GameOverMenu.gameObject.SetActive(true);
-            GameOverText.text = $"You Pulled {NPCDeathCounterUI.NPCDeathCounter} Pranks!";
+            GameOverText.text = $"{NPCDeathCounterUI.NPCDeathCounter} Pranks";
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0;
