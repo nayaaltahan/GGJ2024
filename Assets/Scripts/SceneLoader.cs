@@ -24,6 +24,16 @@ namespace DefaultNamespace
         {
             if (Input.GetKeyDown(KeyCode.Delete))
                 OnGameOver();
+            
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                if (Time.timeScale == 0)
+                    Time.timeScale = 1;
+                else
+                    Time.timeScale = 0;
+            }
+            
+            
         }
 
         public async void OnPlay()

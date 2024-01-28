@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y < -5f)
             transform.position = new Vector3(0, 2, 0);
 
-        
+
         if (_ragdollController.IsRagdoolActive)
             return;
 
@@ -105,8 +105,11 @@ public class PlayerController : MonoBehaviour
             moveMagnitude = Mathf.Clamp(moveMagnitude, 0f, 1f);
         }
 
-        _animator.SetFloat(MoveVelocity, moveMagnitude);
-        _animator.SetFloat(TimeFalling, _timeNotGrounded);
+        if (Time.timeScale > 0)
+        {
+            _animator.SetFloat(MoveVelocity, moveMagnitude);
+            _animator.SetFloat(TimeFalling, _timeNotGrounded);
+        }
 
         // Rotate the model to the direction of movement
         if (moveMagnitude > 0.1f)
