@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DefaultNamespace;
 using Feature.NPC.Scripts.PatrolNodes;
 using Feature.NPC.Scripts.Scriptable_Objects;
 using Feature.NPC.Scripts.States;
@@ -24,12 +25,17 @@ namespace Feature.NPC.Scripts
     {
         [SerializeField] private PatrolNodeController _patrolNodeController;
         [SerializeField] private NpcSettings _settings;
+        [SerializeField] private Transform _attackFromTransform;
         [SerializeField] private NpcState _defaultState = NpcState.Patrol;
 
 
         private NavMeshAgent _navMeshAgent;
         private Animator _animator;
         private RagdollController _ragdollController;
+        private Transform _playerTransform;
+        private PlayerHealth _playerHealth;
+        public Vector3 TargetPosition;
+        public Vector3 RandomPoint;
 
         public PatrolNodeController PatrolNodeController => _patrolNodeController;
         public NavMeshAgent NavMeshAgent => _navMeshAgent;
@@ -37,6 +43,12 @@ namespace Feature.NPC.Scripts
         public NpcSettings Settings => _settings;
         public RagdollController RagdollController => _ragdollController;
         public NpcBaseState PreviousState => _previousState;
+        public Transform PlayerTransform => _playerTransform;
+        public Transform AttackFromTransform => _attackFromTransform;
+        public PlayerHealth PlayerHealth => _playerHealth;
+        
+        public event Action OnNpcDeath;
+        
 
         [ShowInInspector, ReadOnly]
         private NpcBaseState _currentState;
@@ -49,10 +61,16 @@ namespace Feature.NPC.Scripts
         private void Awake()
         {
             InitializeStates();
-
             GetComponents();
 
+
             SetState(_defaultState);
+        }
+
+        private void Start()
+        {
+            _playerTransform = PlayerManager.Instance.PlayerTransform;
+            _playerHealth = PlayerManager.Instance.PlayerTransform.GetComponent<PlayerHealth>();
         }
 
         private void GetComponents()
@@ -68,6 +86,8 @@ namespace Feature.NPC.Scripts
             _states.Add(NpcState.Idle, new IdleState(NpcState.Idle));
             _states.Add(NpcState.Patrol, new PatrollingState(NpcState.Patrol));
             _states.Add(NpcState.Dead, new DeadState(NpcState.Dead));
+            _states.Add(NpcState.Chase, new ChasingState(NpcState.Chase));
+            _states.Add(NpcState.Attack, new AttackingState(NpcState.Attack));
         }
 
         private void Update()
@@ -90,12 +110,27 @@ namespace Feature.NPC.Scripts
             _currentState.OnEnterState(this);
         }
 
+        public void SetDeadState()
+        {
+            OnNpcDeath?.Invoke();
+            SetState(NpcState.Dead);
+        }
+
         public void SetAgentCalmSettings()
         {
             _navMeshAgent.isStopped = false;
             _navMeshAgent.speed = Settings.CalmSpeed;
             _navMeshAgent.angularSpeed = Settings.CalmRotationSpeed;
             _navMeshAgent.stoppingDistance = Settings.CalmStoppingDistance;
+        }
+        
+        
+        public void SetAgentAlertSettings()
+        {
+            _navMeshAgent.isStopped = false;
+            _navMeshAgent.speed = Settings.AlertSpeed;
+            _navMeshAgent.angularSpeed = Settings.AlertRotationSpeed;
+            _navMeshAgent.stoppingDistance = Settings.AlertStoppingDistance;
         }
 
         public void DisableNavMeshAgent()
@@ -111,6 +146,11 @@ namespace Feature.NPC.Scripts
         public void EnableNavMeshAgent()
         {
             _navMeshAgent.isStopped = false;
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            _currentState?.OnDrawGizmosSelected(this);
         }
     }
 }

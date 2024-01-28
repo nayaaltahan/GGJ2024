@@ -17,6 +17,18 @@ namespace Feature.Ragdoll
         [FoldoutGroup("Ragdoll references")]
         [SerializeField]
         private List<Rigidbody> _ragdollRigidBodies;
+
+        [SerializeField] private Rigidbody _footRigidBody;
+        [SerializeField] private Rigidbody _headRigidBody;
+
+        [SerializeField] private List<Rigidbody> _onDeathRigidbodies = new List<Rigidbody>();
+        
+        
+        private bool _isRagdoolActive = false;
+        public bool IsRagdoolActive => _isRagdoolActive;
+        
+        public event Action OnRagdollActivated;
+        public event Action OnRagdollDeactivated;
         
         
 #if UNITY_EDITOR  
@@ -55,6 +67,8 @@ namespace Feature.Ragdoll
 
         public void ActivateRagdoll()
         {
+            OnRagdollActivated?.Invoke();
+            _isRagdoolActive = true;
             _environmentColliderParent.SetActive(false);
             for (var i = 0; i < _ragdollColliders.Count; i++)
             {
@@ -65,6 +79,8 @@ namespace Feature.Ragdoll
 
         public void DeactivateRagdoll()
         {
+            OnRagdollDeactivated?.Invoke();
+            _isRagdoolActive = false;
             _environmentColliderParent.SetActive(true);
             for (var i = 0; i < _ragdollColliders.Count; i++)
             {
@@ -80,5 +96,25 @@ namespace Feature.Ragdoll
                 rigidbody.AddForce(force);
             }
         }
+        
+        public void AddForceToFoot(Vector3 force)
+        {
+            _footRigidBody.AddForce(force, ForceMode.Impulse);
+        }
+        
+        public void AddForceToHead(Vector3 force)
+        {
+            _headRigidBody.AddForce(force);
+        }
+        
+        public void AddForceToOnDeathRigidbodies(Vector3 force)
+        {
+            foreach (var rigidbody in _onDeathRigidbodies)
+            {
+                rigidbody.AddForce(force);
+            }
+        }
+        
+        
     }
 }
