@@ -75,5 +75,10 @@ namespace DefaultNamespace
             yield return new WaitForEndOfFrame();
             MainMenuCamera.gameObject.SetActive(true);
         }
+        
+        public void OnQuit()
+        {
+            Application.Quit();
+        }
     }
 }
