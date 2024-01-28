@@ -32,6 +32,7 @@ public class BananaAmmo : MonoBehaviour
             _isActive = !pickedUpAmmo;
             _graphics.gameObject.SetActive(!pickedUpAmmo);
             _timePickedUp = Time.time;
+            AudioManager.instance.PlayOneShot("event:/pickup");
         }
     }
 

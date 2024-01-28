@@ -135,6 +135,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 295
+--- !u!114 &-448265931293070120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ding
+  m_EditorClassIdentifier: 
+  Path: event:/ding
+  Guid:
+    Data1: -1859540362
+    Data2: 1250724300
+    Data3: -2047866468
+    Data4: -942714424
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
 --- !u!114 &-377118532715228825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,12 +216,14 @@ MonoBehaviour:
   - {fileID: -1977407181291000826}
   - {fileID: 8819110629827142750}
   - {fileID: 6946572556515968105}
+  - {fileID: -448265931293070120}
+  - {fileID: 8720249409481363570}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6684934945744486143}
   StringsBanks:
   - {fileID: 792364959179122838}
-  cacheTime: 638420494099699253
+  cacheTime: 638420541967878352
   cacheVersion: 131616
 --- !u!114 &792364959179122838
 MonoBehaviour:
@@ -211,10 +240,10 @@ MonoBehaviour:
   Path: Assets/Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638420494099699253
+  lastModified: 638420541967878352
   FileSizes:
   - Name: 
-    Value: 1252
+    Value: 1324
   Exists: 1
 --- !u!114 &4263774209334063298
 MonoBehaviour:
@@ -285,7 +314,7 @@ MonoBehaviour:
   Path: Assets/Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638420494099684133
+  lastModified: 638420541967857909
   FileSizes: []
   Exists: 1
 --- !u!114 &6946572556515968105
@@ -315,6 +344,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1658
+--- !u!114 &8720249409481363570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/pickup
+  m_EditorClassIdentifier: 
+  Path: event:/pickup
+  Guid:
+    Data1: -1151770542
+    Data2: 1089278536
+    Data3: 1880482718
+    Data4: -314978935
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 362
 --- !u!114 &8819110629827142750
 MonoBehaviour:
   m_ObjectHideFlags: 0

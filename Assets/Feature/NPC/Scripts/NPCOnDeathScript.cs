@@ -40,6 +40,7 @@ namespace Feature.NPC.Scripts
             NPCSpawner.NPCCounter--;
             NPCDeathCounterUI.NPCDeathCounter++;
             AudioManager.instance.Play3DOneShot("event:/NPC Death", _npcStateController.transform.position);
+            AudioManager.instance.PlayOneShot("event:/ding");
         }
 
         private void Update()
