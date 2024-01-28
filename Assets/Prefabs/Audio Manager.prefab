@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1698004838559884596}
   - component: {fileID: 1718661355157767521}
+  - component: {fileID: 7278195601496544478}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -44,3 +45,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9933eec7d45a4905b346b2a6a3201887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7278195601496544478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3276634021378221514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 292808280
+      Data2: 1335079093
+      Data3: 714019516
+      Data4: -300751976
+    Path: event:/music
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
