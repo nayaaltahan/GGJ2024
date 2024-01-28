@@ -29,7 +29,6 @@ namespace DefaultNamespace
         {
             transform.SetParent(null);
             _rb.isKinematic = false;
-            Debug.Log("Direction is: " + direction + " and intensity is: " + intensity);
             _rb.AddForce(direction * _speed * intensity, ForceMode.Impulse);
         }
 
