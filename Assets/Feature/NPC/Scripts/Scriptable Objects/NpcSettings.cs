@@ -37,6 +37,8 @@ namespace Feature.NPC.Scripts.Scriptable_Objects
         [SerializeField] private float _attackRange = 1f;
         [SerializeField] private float _exitAttackStateRange = 3.5f;
         [SerializeField] private float _attackDamage = 100f;
+
+        [SerializeField] private float _timeToGoToHeaven = 15f;
         
         
         public float CalmSpeed => _calmSpeed;
@@ -53,5 +55,6 @@ namespace Feature.NPC.Scripts.Scriptable_Objects
         public float PatrolToAttackDistance => _attackRange - 0.2f;
         public float ExitAttackStateRange => _exitAttackStateRange;
         public float AttackDamage => _attackDamage;
+        public float TimeToGoToHeaven => _timeToGoToHeaven;
     }
 }

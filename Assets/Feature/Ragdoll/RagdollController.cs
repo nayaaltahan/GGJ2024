@@ -20,6 +20,8 @@ namespace Feature.Ragdoll
 
         [SerializeField] private Rigidbody _footRigidBody;
         [SerializeField] private Rigidbody _headRigidBody;
+
+        [SerializeField] private List<Rigidbody> _onDeathRigidbodies = new List<Rigidbody>();
         
         
         private bool _isRagdoolActive = false;
@@ -104,5 +106,15 @@ namespace Feature.Ragdoll
         {
             _headRigidBody.AddForce(force);
         }
+        
+        public void AddForceToOnDeathRigidbodies(Vector3 force)
+        {
+            foreach (var rigidbody in _onDeathRigidbodies)
+            {
+                rigidbody.AddForce(force);
+            }
+        }
+        
+        
     }
 }

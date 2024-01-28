@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2676399685152315850}
   - component: {fileID: 9047610429943333639}
   - component: {fileID: 4182938688364917944}
+  - component: {fileID: 9129912346021934386}
   - component: {fileID: 5263037745546568691}
   m_Layer: 0
   m_Name: NPC Standard
@@ -146,6 +147,27 @@ MonoBehaviour:
   - {fileID: 8957992512306748759}
   _footRigidBody: {fileID: 9001383512689292292}
   _headRigidBody: {fileID: 4628331309171578627}
+  _onDeathRigidbodies:
+  - {fileID: 2769610406880606728}
+  - {fileID: 9001383512689292292}
+  - {fileID: 6158611568772936355}
+  - {fileID: 8957992512306748759}
+  - {fileID: 4628331309171578627}
+--- !u!114 &9129912346021934386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747745996374290224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2ca1c49471d47fcbb66fa6d39c597ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _force: 60
+  _timeToDeleteAfterFlying: 10
+  _light: {fileID: 1037291177525314783, guid: dc70270a4db97e642a037ddc8349b613, type: 3}
 --- !u!195 &5263037745546568691
 NavMeshAgent:
   m_ObjectHideFlags: 0

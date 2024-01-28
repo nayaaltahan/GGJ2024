@@ -26,3 +26,5 @@ MonoBehaviour:
     m_Bits: 128
   _attackRange: 4
   _exitAttackStateRange: 1
+  _attackDamage: 100
+  _timeToGoToHeaven: 2

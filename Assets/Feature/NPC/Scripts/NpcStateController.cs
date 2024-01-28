@@ -47,6 +47,8 @@ namespace Feature.NPC.Scripts
         public Transform AttackFromTransform => _attackFromTransform;
         public PlayerHealth PlayerHealth => _playerHealth;
         
+        public event Action OnNpcDeath;
+        
 
         [ShowInInspector, ReadOnly]
         private NpcBaseState _currentState;
@@ -110,6 +112,7 @@ namespace Feature.NPC.Scripts
 
         public void SetDeadState()
         {
+            OnNpcDeath?.Invoke();
             SetState(NpcState.Dead);
         }
 
