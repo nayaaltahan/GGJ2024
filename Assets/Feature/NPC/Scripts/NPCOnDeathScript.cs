@@ -37,6 +37,8 @@ namespace Feature.NPC.Scripts
         private void OnNpcDeath()
         {
             _isDead = true;
+            NPCSpawner.NPCCounter--;
+            NPCDeathCounterUI.NPCDeathCounter++;
             AudioManager.instance.Play3DOneShot("event:/NPC Death", _npcStateController.transform.position);
         }
 

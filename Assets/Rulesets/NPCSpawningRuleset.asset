@@ -15,3 +15,5 @@ MonoBehaviour:
   NPCPrefab: {fileID: 2747745996374290224, guid: 736a808aec79c2b4da959d4a4c8a0674,
     type: 3}
   spawningInterval: 30
+  randomFactor: 15
+  maxNPCCount: 100

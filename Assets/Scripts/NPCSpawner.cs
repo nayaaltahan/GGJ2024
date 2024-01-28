@@ -13,11 +13,13 @@ public class NPCSpawner : MonoBehaviour
 {
     public PatrolNodeController PatrolNodeController;
     public NPCSpawningRuleset ruleset;
+    public static int NPCCounter = 0;
 
     private void Awake()
     {
         if (PatrolNodeController == null)
         {
+            NPCCounter = 0;
             var node = FindClosestPatrolNode();
             PatrolNodeController = node.GetComponentInParent<PatrolNodeController>();
         }
@@ -53,14 +55,18 @@ public class NPCSpawner : MonoBehaviour
     {
         var npcGameObject = Instantiate(ruleset.NPCPrefab, transform.position, Quaternion.identity);
         npcGameObject.GetComponent<NpcStateController>().PatrolNodeController = PatrolNodeController;
+        NPCCounter++;
     }
     
     private IEnumerator SpawnNpcOnTimer()
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(ruleset.spawningInterval - 5f, ruleset.spawningInterval + 5f));
-            SpawnNPC();
+            yield return new WaitForSeconds(Random.Range(ruleset.spawningInterval - ruleset.randomFactor, ruleset.spawningInterval + ruleset.randomFactor));
+            if (NPCCounter < ruleset.maxNPCCount)
+            {
+                SpawnNPC();
+            }
         }
     }
 
