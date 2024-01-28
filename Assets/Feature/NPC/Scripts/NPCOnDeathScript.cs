@@ -36,6 +36,7 @@ namespace Feature.NPC.Scripts
         private void OnNpcDeath()
         {
             _isDead = true;
+            NPCSpawner.NPCCounter--;
         }
 
         private void Update()
