@@ -1,4 +1,5 @@
 using System;
+using DefaultNamespace;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -37,6 +38,7 @@ namespace Feature.NPC.Scripts
         {
             _isDead = true;
             NPCSpawner.NPCCounter--;
+            NPCDeathCounterUI.NPCDeathCounter++;
         }
 
         private void Update()

@@ -19,6 +19,7 @@ public class NPCSpawner : MonoBehaviour
     {
         if (PatrolNodeController == null)
         {
+            NPCCounter = 0;
             var node = FindClosestPatrolNode();
             PatrolNodeController = node.GetComponentInParent<PatrolNodeController>();
         }
