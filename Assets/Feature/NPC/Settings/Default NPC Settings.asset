@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Default NPC Settings
   m_EditorClassIdentifier: 
   _calmSpeed: 3.5
-  _alertSpeed: 5
+  _alertSpeed: 8
   _calmRotationSpeed: 120
   _alertRotationSpeed: 170
   _calmStoppingDistance: 1
