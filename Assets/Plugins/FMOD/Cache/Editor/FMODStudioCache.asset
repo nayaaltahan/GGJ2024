@@ -1,0 +1,343 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8941702718374691416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Monkey Chatter
+  m_EditorClassIdentifier: 
+  Path: event:/Monkey Chatter
+  Guid:
+    Data1: 1502724033
+    Data2: 1175736928
+    Data3: -1166698574
+    Data4: -119167866
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1658
+--- !u!114 &-8484601543280586258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC Death
+  m_EditorClassIdentifier: 
+  Path: event:/NPC Death
+  Guid:
+    Data1: -1524611158
+    Data2: 1264236652
+    Data3: 1546847640
+    Data4: 1068014410
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 40
+  Length: 1436
+--- !u!114 &-3562514839353688997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/fart
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/fart
+  Guid:
+    Data1: 1043408182
+    Data2: 1246224816
+    Data3: -1223695193
+    Data4: -842496515
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 407
+--- !u!114 &-1977407181291000826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NPC Aggro
+  m_EditorClassIdentifier: 
+  Path: event:/NPC Aggro
+  Guid:
+    Data1: 1524609521
+    Data2: 1135073626
+    Data3: 1431714213
+    Data4: 1683674245
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 350
+  Length: 2560
+--- !u!114 &-1150187273451235061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Splat
+  m_EditorClassIdentifier: 
+  Path: event:/Splat
+  Guid:
+    Data1: 652420627
+    Data2: 1216339173
+    Data3: -1033760079
+    Data4: 1686820026
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 150
+  Length: 363
+--- !u!114 &-1026177065335899748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/monkey_cry
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/monkey_cry
+  Guid:
+    Data1: -1997110248
+    Data2: 1317468000
+    Data3: 1355089294
+    Data4: -898779164
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 295
+--- !u!114 &-377118532715228825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Attacks/Banana_hit_throw
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Attacks/Banana_hit_throw
+  Guid:
+    Data1: -928761238
+    Data2: 1217036158
+    Data3: 1571437227
+    Data4: -1067121123
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 40
+  Length: 528
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 792364959179122838}
+  - {fileID: 6684934945744486143}
+  EditorEvents:
+  - {fileID: -1150187273451235061}
+  - {fileID: -1026177065335899748}
+  - {fileID: 6185035369121886509}
+  - {fileID: -3562514839353688997}
+  - {fileID: -377118532715228825}
+  - {fileID: 4263774209334063298}
+  - {fileID: -8484601543280586258}
+  - {fileID: -8941702718374691416}
+  - {fileID: 9211531122165750730}
+  - {fileID: -1977407181291000826}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 6684934945744486143}
+  StringsBanks:
+  - {fileID: 792364959179122838}
+  cacheTime: 638420476785190226
+  cacheVersion: 131616
+--- !u!114 &792364959179122838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Banks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638420476785190226
+  FileSizes:
+  - Name: 
+    Value: 1204
+  Exists: 1
+--- !u!114 &4263774209334063298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AngelDeathChoir
+  m_EditorClassIdentifier: 
+  Path: event:/AngelDeathChoir
+  Guid:
+    Data1: -1822700161
+    Data2: 1083758589
+    Data3: 2137697434
+    Data4: 178189771
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 70
+  Length: 16000
+--- !u!114 &6185035369121886509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Attacks/Banana_Throw
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Attacks/Banana_Throw
+  Guid:
+    Data1: 678527521
+    Data2: 1327302654
+    Data3: -1940199259
+    Data4: 1044286530
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &6684934945744486143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Banks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638420476785180168
+  FileSizes: []
+  Exists: 1
+--- !u!114 &9211531122165750730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Attacks/impact_hit
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Attacks/impact_hit
+  Guid:
+    Data1: -700847128
+    Data2: 1304410346
+    Data3: -1561444977
+    Data4: -548805807
+  Banks:
+  - {fileID: 6684934945744486143}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 444

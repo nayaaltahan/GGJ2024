@@ -39,6 +39,7 @@ namespace Feature.NPC.Scripts
             _isDead = true;
             NPCSpawner.NPCCounter--;
             NPCDeathCounterUI.NPCDeathCounter++;
+            AudioManager.instance.Play3DOneShot("event:/NPC Death", _npcStateController.transform.position);
         }
 
         private void Update()
@@ -57,6 +58,7 @@ namespace Feature.NPC.Scripts
                     _lightActivated = true;
                     _ogInstensity = _lightComp.intensity;
                     _ogSpotAngle = _lightComp.spotAngle;
+                    AudioManager.instance.Play3DOneShot("event:/AngelDeathChoir", _lightComp.transform.position);
                 }
                 
                 _secondTimer += Time.deltaTime;
