@@ -37,7 +37,12 @@ namespace Feature.NPC.Scripts
         public Vector3 TargetPosition;
         public Vector3 RandomPoint;
 
-        public PatrolNodeController PatrolNodeController => _patrolNodeController;
+        public PatrolNodeController PatrolNodeController
+        {
+            get => _patrolNodeController;
+            set => _patrolNodeController = value;
+        }
+
         public NavMeshAgent NavMeshAgent => _navMeshAgent;
         public Animator NpcAnimator => _animator;
         public NpcSettings Settings => _settings;
