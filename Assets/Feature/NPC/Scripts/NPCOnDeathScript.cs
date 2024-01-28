@@ -1,4 +1,5 @@
 using System;
+using DefaultNamespace;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -36,6 +37,7 @@ namespace Feature.NPC.Scripts
         private void OnNpcDeath()
         {
             _isDead = true;
+            AudioManager.instance.Play3DOneShot("event:/NPC Death", _npcStateController.transform.position);
         }
 
         private void Update()
@@ -54,6 +56,7 @@ namespace Feature.NPC.Scripts
                     _lightActivated = true;
                     _ogInstensity = _lightComp.intensity;
                     _ogSpotAngle = _lightComp.spotAngle;
+                    AudioManager.instance.Play3DOneShot("event:/AngelDeathChoir", _lightComp.transform.position);
                 }
                 
                 _secondTimer += Time.deltaTime;

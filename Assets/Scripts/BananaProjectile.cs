@@ -48,6 +48,7 @@ namespace DefaultNamespace
             {
                 _objectsHit.Add(other.transform.parent);
                 other.gameObject.GetComponentInParent<NpcStateController>()?.SetState(NpcState.Chase);
+                AudioManager.instance.Play3DOneShot("event:/NPC Aggro", other.gameObject.transform.position);
             }
             else if (other.gameObject.CompareTag("Ground"))
             {
@@ -55,6 +56,7 @@ namespace DefaultNamespace
                 // Peel VFX as well and sound
                 Destroy(gameObject);                
             }
+            AudioManager.instance.Play3DOneShot("event:/SFX/Attacks/banana_hit_throw", transform.position);
         }
     }
 }

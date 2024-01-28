@@ -284,6 +284,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _forceToApply: 100
+  _slatSound:
+    Guid:
+      Data1: 652420627
+      Data2: 1216339173
+      Data3: -1033760079
+      Data4: 1686820026
+    Path: event:/Splat
 --- !u!65 &8978434043167040512
 BoxCollider:
   m_ObjectHideFlags: 0

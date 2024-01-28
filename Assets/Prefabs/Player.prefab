@@ -89,6 +89,8 @@ GameObject:
   - component: {fileID: 1498982621858359453}
   - component: {fileID: 5464069073383179943}
   - component: {fileID: 6006124191540177898}
+  - component: {fileID: 5023629061213916524}
+  - component: {fileID: 8740673072467555142}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -255,6 +257,13 @@ MonoBehaviour:
   _poopPrefab: {fileID: 4853246817605366570, guid: f291e9885454d0544a63a374a4c0327c,
     type: 3}
   _poopOrigin: {fileID: 5726263168063111394}
+  _poopSound:
+    Guid:
+      Data1: 1043408182
+      Data2: 1246224816
+      Data3: -1223695193
+      Data4: -842496515
+    Path: event:/SFX/fart
 --- !u!114 &6006124191540177898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +279,33 @@ MonoBehaviour:
   _maxHealth: 100
   _timeToStandUp: 2000
   _graphics: {fileID: 54099817695585858}
+--- !u!114 &5023629061213916524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3832120565391169031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbecd40402384268ad34150296fba0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _timeToStandUp: 2000
+  _graphics: {fileID: 54099817695585858}
+--- !u!114 &8740673072467555142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3832120565391169031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677489b0fb104beabc894991225af4cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4894493585951068240
 GameObject:
   m_ObjectHideFlags: 0
