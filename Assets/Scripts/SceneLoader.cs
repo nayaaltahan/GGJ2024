@@ -22,7 +22,7 @@ namespace DefaultNamespace
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Delete))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 OnGameOver();
                 if (MainMenu.gameObject.activeInHierarchy)
