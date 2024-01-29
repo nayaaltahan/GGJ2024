@@ -110,11 +110,16 @@ namespace DefaultNamespace
             var projectile = Instantiate(_bananaPrefab, _shootFrom.position, _shootFrom.rotation, _shootFrom);
             _animator.SetTrigger(TriggerShoot);
             await UniTask.Delay(_delayBeforeShoot);
+            projectile.transform.SetParent(null);
             // projectile.GetComponent<BananaProjectile>().Shoot(_camTransform.forward, holdTime);
             // Shoot from the _shootFrom location towards the middle of the screen
-            var ray = Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f));
+            // projectile.GetComponent<BananaProjectile>().Shoot(ray.direction , holdTime);
+            // Set direction from the _shootFrom to the middle of the screen
+            int x = Screen.width / 2;
+            int y = Screen.height / 2;
+ 
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(x, y));
             projectile.GetComponent<BananaProjectile>().Shoot(ray.direction , holdTime);
-            
         }
     }
 }
