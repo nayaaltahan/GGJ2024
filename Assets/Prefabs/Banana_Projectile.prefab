@@ -96,6 +96,8 @@ GameObject:
   - component: {fileID: 3568866431732530680}
   - component: {fileID: 7150362366536509719}
   - component: {fileID: 2341285584386803551}
+  - component: {fileID: 2920221179224385611}
+  - component: {fileID: 3178156222512353555}
   m_Layer: 8
   m_Name: Banana_Projectile
   m_TagString: Untagged
@@ -184,3 +186,36 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8457624670379154836, guid: e76ef8a0e2da58c42bb307c5af0d6a43, type: 3}
+--- !u!135 &2920221179224385611
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845649813069775584}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3178156222512353555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845649813069775584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177c14c0a1e8d2644a4ce0121dc92ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

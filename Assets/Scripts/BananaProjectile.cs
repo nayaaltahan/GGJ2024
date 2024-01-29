@@ -43,8 +43,9 @@ namespace DefaultNamespace
 
         private void OnCollisionEnter(Collision other)
         {
-            if (other.gameObject.CompareTag("NPCHitCollider") && _objectsHit.Contains(other.transform.transform) == false)
+            if (other.gameObject.CompareTag("NPCHitCollider") && _objectsHit.Contains(other.transform.parent) == false)
             {
+                NPCDeathCounterUI.NPCDeathCounter++;
                 _objectsHit.Add(other.transform.parent);
                 other.gameObject.GetComponentInParent<NpcStateController>()?.SetState(NpcState.Chase);
                 AudioManager.instance.Play3DOneShot("event:/NPC Aggro", other.gameObject.transform.position);

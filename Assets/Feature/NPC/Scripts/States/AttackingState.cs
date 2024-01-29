@@ -50,7 +50,7 @@ namespace Feature.NPC.Scripts.States
             if (hit > 0)
             {
                 AudioManager.instance.Play3DOneShot("event:/SFX/monkey_cry", stateController.transform.position);
-                var force = stateController.transform.forward * 10;
+                var force = stateController.transform.forward + Vector3.up * 80;
                 stateController.PlayerHealth.TakeDamage(stateController.Settings.AttackDamage, force);
             }
             // Debug draw the spherecast

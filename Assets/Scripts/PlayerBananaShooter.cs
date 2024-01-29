@@ -111,9 +111,9 @@ namespace DefaultNamespace
             _animator.SetTrigger(TriggerShoot);
             await UniTask.Delay(_delayBeforeShoot);
             // projectile.GetComponent<BananaProjectile>().Shoot(_camTransform.forward, holdTime);
-            // Shoot towards middle of screen
-            var ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0));
-            projectile.GetComponent<BananaProjectile>().Shoot(ray.direction, holdTime);
+            // Shoot from the _shootFrom location towards the middle of the screen
+            var ray = Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f));
+            projectile.GetComponent<BananaProjectile>().Shoot(ray.direction , holdTime);
             
         }
     }

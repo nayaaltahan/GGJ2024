@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _respawnTime: 10
+  _height: 1
   _graphics: {fileID: 8970721264039263469}
 --- !u!65 &2474157986657619769
 BoxCollider:

@@ -51,6 +51,7 @@ namespace Feature.NPC.Scripts
         public Transform PlayerTransform => _playerTransform;
         public Transform AttackFromTransform => _attackFromTransform;
         public PlayerHealth PlayerHealth => _playerHealth;
+        public NpcState CurrentState => _currentState.Type;
         
         public event Action OnNpcDeath;
         

@@ -9,15 +9,19 @@ using Update = UnityEngine.PlayerLoop.Update;
 public class BananaAmmo : MonoBehaviour
 {
     [SerializeField] private float _respawnTime = 10f;
+    [SerializeField] private float _height = 2f;
     [SerializeField] private Transform _graphics;
 
 
     private bool _isActive = true;
     private float _timePickedUp;
 
+    private Vector3 _startPos;
+
     // Start is called before the first frame update
     void Start()
     {
+        _startPos = _graphics.transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,9 +45,8 @@ public class BananaAmmo : MonoBehaviour
         // float the graphics up and down
         if (_isActive)
         {
-            var position = _graphics.transform.position;
-            position = new Vector3(position.x, position.y + Mathf.Sin(Time.time) * 0.005f, position.z);
-            _graphics.transform.position = position;
+            float mod = 0.5f + Mathf.Sin (Time.time) * 0.5f;
+            _graphics.transform.position = _startPos + Vector3.up * mod * _height;
         }
         else
         {

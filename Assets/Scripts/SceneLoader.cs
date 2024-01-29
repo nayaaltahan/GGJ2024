@@ -23,7 +23,11 @@ namespace DefaultNamespace
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Delete))
+            {
                 OnGameOver();
+                if (MainMenu.gameObject.activeInHierarchy)
+                    MainMenu.gameObject.SetActive(false);
+            }
             
             if (Input.GetKeyDown(KeyCode.P))
             {
