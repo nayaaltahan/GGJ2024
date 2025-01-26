@@ -3,7 +3,12 @@ guid: 6f96eca6caa226a4eb37306e62104707
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pavement
+    second: {fileID: 2100000, guid: 3d28968c5d908cb43bea9cbbba686084, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -90,7 +95,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1.4999999
+    globalScale: 15
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

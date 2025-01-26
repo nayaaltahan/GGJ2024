@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: leafsGreen
     second: {fileID: 2100000, guid: e20591148d8b54e468b05a5496209538, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: woodBark
+    second: {fileID: 2100000, guid: 938554f1058b14940a49b3d4819730da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
